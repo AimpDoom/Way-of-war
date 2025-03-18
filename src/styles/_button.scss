@@ -1,0 +1,18 @@
+@use 'sass:math';
+$button-size: 48px;
+$button-icon-size: 24px;
+
+
+
+.button {
+    padding: math.div(($button-size - $button-icon-size), 2);
+
+    >.icon {
+        height: $button-icon-size;
+        width: $button-icon-size;
+    }
+}
+
+.button {
+    @include flex(flex,none,center,center);
+}

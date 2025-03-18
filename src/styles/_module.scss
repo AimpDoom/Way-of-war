@@ -1,0 +1,86 @@
+$gray-color: #F9FAFC;
+$white-color: #ffffff;
+$text-color: #8A8E99;
+$card-text-color: #8A8E99;
+$border-color: #EBECEE;
+$active-color-tabs: #6A598F;
+$card-icon-color: #ECFEF2;
+$card-label-text-color: #42765F;
+$tabl-text-color: rgba(49, 43, 43, 0.8);
+$color-disable: #EDF0F6;
+$main-lain-table-color: #E8D9FA;
+$custom-lain-table-color: #7F57D9;
+$font-size-small: 14px;
+
+%font-small {
+    font-size: $font-size-small;
+}
+
+@mixin box($height, $width: null) {
+    height: $height;
+
+    @if $width ==null {
+        width: $height;
+    }
+
+    @else {
+        width: $width;
+    }
+
+}
+
+@mixin flex($display: none,
+    $direction: none,
+    $justify-content: none,
+    $align-items: none,
+) {
+    display: flex;
+
+    @if $display !=none {
+        display: $display;
+    }
+
+    @if $justify-content !=none {
+        justify-content: $justify-content;
+    }
+
+    @if $direction !=none {
+        flex-direction: $direction;
+    }
+
+    @if $align-items !=none {
+        align-items: $align-items;
+    }
+
+}
+
+
+main {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: $white-color;
+    overflow: auto;
+    flex: 1;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+main,
+header {
+    height: 100vh;
+}
+
+
+@media (min-device-width: 375px) and (max-device-width: 812px) {
+    main {
+        padding-left: 20px;
+        padding-right: 20px;
+        overflow-x: hidden;
+    }
+}

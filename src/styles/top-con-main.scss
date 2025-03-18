@@ -1,0 +1,102 @@
+@use 'sass:math';
+
+.up-container {
+    @include flex(flex, row, space-between, none);
+    padding: 25px 20px 20px 20px;
+    border-radius: 10px 10px 0 0;
+    border: 2px solid $border-color;
+
+    >.btw {
+        @include flex(flex, row, none, none);
+        gap: 2rem;
+    }
+
+    >.btn-load {
+        padding: math.div(($button-download-height - $font-size-small), 2);
+        height: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        align-self: flex-end;
+    }
+}
+
+.text {
+    @include flex(flex, column, none, none);
+    gap: 0.4rem;
+}
+
+.text-desc {
+    color: $tabl-text-color;
+    font-size: 16px;
+}
+
+.input {
+    @include flex(flex, none, none, center);
+    height: $button-download-height;
+    box-sizing: border-box;
+    border: 2px solid $border-color;
+    gap: 0.5rem;
+    border-radius: 10px;
+    padding-left: 5px;
+
+    input {
+        border: none;
+        outline: none;
+        flex: 1;
+    }
+}
+
+.slt_btn {
+    @include flex(flex, row, space-between, center);
+    padding: math.div(($button-download-height - $font-size-small),2);
+    height: $button-download-height;
+    gap: 90px;
+    font-size: 14px;
+    background-color: $white-color;
+    border-radius: 10px;
+    border: 2px solid $border-color;
+    box-sizing: border-box;
+
+    & .slt_bnt_item {
+        @include flex(flex,row,none,center);
+        gap: 10px;
+    }
+    & .slt_btn_item_1{
+        height: 10px;
+        width: 10px;
+        background-color: #57e389;
+        border-radius: 50%;
+    }
+
+    &:hover {
+        background-color: rgba(darken($white-color, 40%), 0.10);
+    }
+}
+
+@media (min-device-width: 375px) and (max-device-width: 812px) {
+    .up-container {
+        flex-direction: column;
+
+        >.btw {
+            @include flex(none, column, center, center);
+            gap: 1rem;
+        }
+
+        >.btn-load {
+            align-self: center;
+            margin-top: 20px;
+        }
+
+        .text {
+            width: 100%;
+        }
+
+        .slt_btn {
+            width: 86%;
+        }
+    }
+
+    input.search {
+        width: 150px;
+    }
+}

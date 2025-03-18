@@ -1,0 +1,44 @@
+header {
+    @include flex(flex,column,none,center);
+    overflow-x: hidden;
+    width: 80px;
+    background-color: $gray-color;
+
+    .up-con {
+        @include flex(flex,column,none,center);
+    }
+
+    .bottom-con {
+        @include flex(flex,column,none,center);
+    }
+
+    >ul {
+        @include flex(flex,column,space-between,none);
+        padding-left: 0;
+        list-style-type: none;
+        height: 100%;
+
+        & .up-con>li,
+        .bottom-con>li {
+            &:hover {
+                background-color: $white-color;
+            }
+
+            &:active {
+                background-color: transparent;
+            }
+        }
+    }
+
+    .profile__icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+    }
+}
+
+@media (min-device-width: 375px) and (max-device-width: 812px) {
+    header {
+        display: none;
+    }
+}

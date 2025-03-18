@@ -1,0 +1,52 @@
+.tabs {
+    @include flex(flex,row,none,none);
+    font-size: 18px;
+    border-bottom: 1px solid $border-color;
+    gap: 2.5rem;
+}
+.tab {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    color: $text-color;
+    padding-bottom: 30px;
+
+    &:hover {
+        color: $active-color-tabs;
+    }
+
+    &::after {
+        display: block;
+        position: absolute;
+        opacity: 0;
+        height: 2px;
+        width: 100%;
+        bottom: -1px;
+        content: "";
+        background-color: $active-color-tabs;
+        border-radius: 10px;
+    }
+
+    &.active {
+        color: $active-color-tabs;
+        font-weight: bold;
+
+        &::after {
+            opacity: 1;
+        }
+    }
+}
+
+@media (min-device-width: 375px) and (max-device-width: 812px) {
+     h1{
+        font-size: 20px;
+     }
+     .tabs{
+        font-size: 14px;
+        gap: 1rem;
+        justify-content: space-between;
+     }
+     .tab{
+        padding-bottom: 12px;
+     }
+}

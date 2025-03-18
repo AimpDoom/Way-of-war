@@ -1,0 +1,21 @@
+.Wall-1 {
+display: flex;
+}
+
+
+.block {
+    width: 50px;
+    height: 100px;
+    background-color: #cee6b1;
+    padding-left: 40px;
+    padding-top: 93px;
+    position: relative;
+    
+}
+.text {
+    font-size: 64;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    padding-left: 233px;
+    padding-top: 93px;
+}

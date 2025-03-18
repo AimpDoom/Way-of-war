@@ -1,0 +1,190 @@
+.main-container {
+    @include flex(flex,column,none,none);
+}
+
+.table {
+    width: 100%;
+    border: 2px solid $border-color;
+    border-top: none;
+    border-collapse: collapse;
+
+    thead tr {
+        height: 6vh;
+    }
+
+    thead th {
+        text-align: start;
+        color: $tabl-text-color;
+        font-size: 14px;
+    }
+}
+
+.value-number {
+    max-height: 25px;
+    border: 2px solid $card-icon-color;
+    background: $card-icon-color;
+    color: $card-label-text-color;
+
+    & .disable {
+        color: $color-disable;
+    }
+}
+
+
+.table thead th:nth-child(1) {
+    width: 3%;
+}
+
+.table thead th:nth-child(2) {
+    width: 24%;
+}
+
+.table thead th:nth-child(3) {
+    width: 9%;
+}
+
+.table thead th:nth-child(4) {
+    width: 23%;
+}
+
+.table thead th:nth-child(5) {
+    width: 13%;
+}
+
+.table thead th:nth-child(6) {
+    width: 24%;
+}
+
+.table tbody {
+    height: 7vh;
+}
+
+.table tbody td:nth-child(2) {
+    @include flex(flex,row,none,none);
+    gap: 1.5rem;
+    padding-top: 3%;
+    padding-bottom: 5%;
+
+
+
+    .org-icon {
+        max-width: 40px;
+        max-height: 40px;
+        padding-top: 0.2em;
+    }
+
+    .cat-app {
+        display: flex;
+        flex-direction: column;
+        @include flex(flex,column,none,none);
+
+        >h4 {
+            margin: 5px 0;
+        }
+
+        >a {
+            color: $text-color;
+        }
+    }
+}
+
+.table tbody td label.value-number {
+    border: 2px solid $card-icon-color;
+    background: $card-icon-color;
+    color: $card-label-text-color;
+    border-radius: 10px;
+    padding: 0rem 0.8rem;
+    margin-left: -15px;
+
+    &.disable {
+        background-color: $color-disable;
+
+        &:hover {
+            background-color: #FF4B4B78;
+        }
+    }
+
+    &:hover {
+        background-color: #00FFF366;
+    }
+}
+
+.text-value>p {
+    margin: 5px 0;
+
+    &.value-up {
+        color: $card-text-color;
+    }
+
+}
+
+.talign {
+    @include flex(flex,row,start,center);
+    gap: 2rem;
+
+    >p {
+        margin: 0;
+
+    }
+}
+
+.main-lain {
+    display: block;
+    position: relative;
+    width: 190px;
+    height: 9px;
+    background: $main-lain-table-color;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: #2CDC2F75;
+    }
+
+
+    .custom-lain {
+        display: block;
+        position: absolute;
+        border-radius: 10px;
+        width: 120px;
+        height: 9px;
+        background: $custom-lain-table-color;
+
+        &:hover {
+            background-color: #DD0B0B;
+        }
+    }
+}
+
+.table tbody td label.value-users {
+    display: flex;
+}
+
+.table tbody td:nth-child(7) {
+    width: 40px;
+}
+
+.table tbody tr:nth-child(odd) {
+    background: $gray-color;
+}
+
+@import "any procent";
+
+@media (min-device-width: 375px) and (max-device-width: 812px) {
+    .table-main {
+        overflow-x: scroll;
+    }
+
+    .table tbody td label.value-number {
+        margin-left: 20px;
+        padding: 0;
+        margin-right: 20px;
+    }
+
+    .table thead th {
+        text-align: center;
+    }
+
+    .text-value>p {
+        width: max-content;
+    }
+}

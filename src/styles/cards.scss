@@ -1,0 +1,86 @@
+.cards {
+    @include flex(flex,row,none,none);
+    width: 100%;
+    margin-top: 40px;
+    gap: 2.5rem
+}
+
+.card-item {
+    flex: 0 1 33%;
+    height: 190px;
+    border: 2px solid $border-color;
+    border-radius: 10px;
+
+    .top-brand {
+        @include flex(flex,row,space-between,center);
+        margin: 20px;
+    }
+
+
+    .total {
+        @include flex(flex,column,none,none);
+        &>p {
+            margin: 0;
+        }
+    }
+
+    .main-icon {
+        display: flex;
+        width: 55px;
+        height: 55px;
+        background-color: $card-icon-color;
+        border-radius: 50%;
+
+        &.center {
+            @include flex(none,none,center,center);
+        }
+        &:hover{
+            background: #47EBFF85;
+        }
+    }
+
+    .bottom-brand {
+        @include flex(flex,row,space-between,center);
+        margin: 20px;
+        margin-top: 30px;
+
+        .value-text {
+            font-size: 14px;
+            color: $card-text-color;
+        }
+
+        .value-number-cards{
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .value {
+            align-self: flex-end;
+            font-size: 18px;
+            max-height: 25px;
+            border: 2px solid $card-icon-color;
+            background: $card-icon-color;
+            color: $card-label-text-color;
+            border-radius: 10px;
+            &:hover{
+                background-color: #AD4ADA;
+                color: #E5D91D;
+                border-color: #CB99E7BA;
+            }
+        }
+    }
+
+    .value-users {
+        @include flex(flex,row,none,none);
+        align-self: flex-end;
+        height: 25px;
+    }
+}
+
+@media (min-device-width: 375px) and (max-device-width: 812px) {
+.cards{
+    margin-top: 25px;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+}

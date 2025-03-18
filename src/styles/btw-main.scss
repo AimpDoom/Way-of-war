@@ -1,0 +1,33 @@
+.btw-main {
+    @include flex(flex,none,space-between,center);
+    width: 100%;
+    margin-top: 40px;
+
+
+    & .btw-up-con {
+        @include flex(flex,column,none,none);
+        >h2 {
+            margin-bottom: 0;
+        }
+
+        >.und-value {
+            color: $text-color;
+        }
+    }
+}
+@media (min-device-width: 375px) and (max-device-width: 812px) {
+    .btw-main{
+        margin-top: 20px;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .btw-up-con{
+        align-items: center;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .und-value{
+        font-size: 14px;
+    }
+}

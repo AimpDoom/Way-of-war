@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <header>
+    <ul>
+      <div class="up-con">
+        <li>
+          <a class="button" href="#">
+            <image class="icon" src="/src/assets/house.svg">
+          </a>
+        </li>
+        <li>
+          <a class="button" href="#">
+            <image class="icon" src="/src/assets/chart-no-axes-column.svg">
+          </a>
+        </li>
+        <li>
+          <a class="button" href="#">
+            <image class="icon" src="/src/assets/layers.svg">
+          </a>
+        </li>
+        <li>
+          <a class="button" href="#">
+            <image class="icon" src="/src/assets/square-check-big.svg">
+          </a>
+        </li>
+        <li>
+          <a class="button" href="#">
+            <image class="icon" src="/src/assets/flag.svg">
+          </a>
+        </li>
+        <li>
+          <a class="button" href="#">
+            <image class="icon" src="/src/assets/users.svg">
+          </a>
+        </li>
+      </div>
+      <div class="bottom-con">
+        <li>
+          <a class="button" href="#">
+            <image class="icon" src="/src/assets/life-buoy.svg">
+          </a>
+        </li>
+        <li>
+          <a class="button" href="#">
+            <image class="icon" src="/src/assets/settings.svg">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="button">
+            <image class="profile__icon"
+              src="/src/assets/Emoj/1662405683_2-kartinkin-net-p-ikonka-cheloveka-minimalizm-vkontakte-2.png"></image>
+          </a>
+        </li>
+      </div>
+    </ul>
+  </header>
+  <main>
+    <h1>Customers</h1>
+    <div class="tabs">
+      <div class="tab active">Overview</div>
+      <div class="tab">Table</div>
+      <div class="tab">List view</div>
+      <div class="tab">Segment</div>
+    </div>
+    <div class="cards">
+      <div class="card-item">
+        <div class="top-brand">
+          <div class="main-icon center">
+            <image class="icon" src="/src/assets/users1.svg" />
+          </div>
+          <a class="button" href="#">
+            <image class="icon menu" src="/src/assets/ellipsis-vertical.svg" />
+          </a>
+        </div>
+        <div class="bottom-brand">
+          <div class="total">
+            <p class="value-text">Total Customers</p>
+            <p class="value-number-cards">2,420</p>
+          </div>
+          <label class="value">
+            ↑ 20 %
+          </label>
+        </div>
+      </div>
+      <div class="card-item">
+        <div class="top-brand">
+          <div class="main-icon center">
+            <image class="icon" src="/src/assets/user-round.svg" />
+          </div>
+          <a class="button" href="#">
+            <image class="icon menu" src="/src/assets/ellipsis-vertical.svg" />
+          </a>
+        </div>
+        <div class="bottom-brand">
+          <div class="total">
+            <p class="value-text">Members</p>
+            <p class="value-number-cards">1,210</p>
+          </div>
+          <label class="value">
+            ↑ 15 %
+          </label>
+        </div>
+      </div>
+      <div class="card-item">
+        <div class="top-brand">
+          <div class="main-icon center">
+            <image class="icon" src="/src/assets/monitor.svg" />
+          </div>
+          <a class="button" href="#">
+            <image class="icon menu" src="/src/assets/ellipsis-vertical.svg" />
+          </a>
+        </div>
+        <div class="bottom-brand">
+          <div class="total">
+            <p class="value-text">Active now </p>
+            <p class="value-number-cards">316</p>
+          </div>
+          <label class="value-users">
+            <a href="#" class="users-emoj">
+              <image class="icon" src="/src/assets/Emoj/angry.svg" />
+            </a>
+            <a href="#" class="users-emoj">
+              <image class="icon" src="/src/assets/Emoj/annoyed.svg" />
+            </a>
+            <a href="#" class="users-emoj">
+              <image class="icon" src="/src/assets/Emoj/frown.svg" />
+            </a>
+            <a href="#" class="users-emoj">
+              <image class="icon" src="/src/assets/Emoj/laugh.svg" />
+            </a>
+            <a href="#" class="users-emoj">
+              <image class="icon" src="/src/assets/Emoj/meh.svg" />
+            </a>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="btw-main">
+      <div class="btw-up-con">
+        <h2>Customers</h2>
+        <p class="und-value">Companies that have purchased a subscriprion.</p>
+      </div>
+      <button class="btn-load" type="button">
+        <image class="icon small" src="/src/assets/cloud-download.svg" />Download all
+      </button>
+    </div>
+    <div class="main-container">
+      <div class="up-container">
+        <div class="btw">
+          <div class="text">
+            <span class="text-desc">
+              Search for customer
+            </span>
+            <div class="input search">
+              <img src="/src/assets/search.svg" />
+              <input type="text" class="search" placeholder="Search"></input>
+            </div>
+          </div>
+          <div class="text">
+            <span class="text-desc">
+              Status
+            </span>
+            <div class="slt_btn">
+              <div class="slt_bnt_item">
+                <div class="slt_btn_item_1"></div>
+                <div class="slt_btn_item_2">View all</div>
+              </div>
+              <img class="slt_btn_item_3" src="/src/assets/chevron-down.svg">
+            </div>
+          </div>
+          <div class="text">
+            <span class="text-desc">
+              Category
+            </span>
+            <div class="slt_btn">
+              <div class="slt_bnt_item">
+                <div class="slt_btn_item_1"></div>
+                <div class="slt_btn_item_2">All</div>
+              </div>
+              <img class="slt_btn_item_3" src="/src/assets/chevron-down.svg">
+            </div>
+          </div>
+        </div>
+        <button class="btn-load">Clear all</button>
+      </div>
+      <div class="table-main">
+        <table class="table">
+          <thead>
+            <tr>
+              <th><input type="radio" /></th>
+              <th>Company ↓ </th>
+              <th>Status</th>
+              <th>About</th>
+              <th>Users</th>
+              <th>License use</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="radio" /> </td>
+              <td>
+                <a class="org-icon">
+                  <img class="org-icon" src="Icon/atlassian_bamboo_logo_icon_168564.svg" />
+                </a>
+                <div class="cat-app">
+                  <h4>Catalog</h4>
+                  <a>catalogapp.io</a>
+                </div>
+              </td>
+              <td>
+                <label class="value-number">Customer</label>
+              </td>
+              <td>
+                <div class="text-value">
+                  <p>Content curating app</p>
+                  <p class="value-up">Brings all your news into one place</p>
+                </div>
+              </td>
+              <td>
+                <label class="value-users">
+                  <a href="#" class="users-emoj">
+                    <image class="icon" src="/src/assets/Emoj/angry.svg" />
+                  </a>
+                  <a href="#" class="users_emoj">
+                    <image class="icon" src="/src/assets/Emoj/annoyed.svg" />
+                  </a>
+                  <a href="#" class="users_emoj">
+                    <image class="icon" src="/src/assets/Emoj/frown.svg" />
+                  </a>
+                  <a href="#" class="users_emoj">
+                    <image class="icon" src="/src/assets/Emoj/laugh.svg" />
+                  </a>
+                  <a href="#" class="users_emoj">
+                    <image class="icon" src="/src/assets/Emoj/meh.svg" />
+                  </a>
+                </label>
+              </td>
+              <td>
+                <div class="talign">
+                  <label class="main-lain">
+                    <div class="custom-lain"></div>
+                  </label>
+                  <p>70%</p>
+                </div>
+              </td>
+              <td>
+                <a href="#">
+                  <image class="icon__2" src="/src/assets/ellipsis-vertical.svg" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="radio" /> </td>
+              <td>
+                <a class="org-icon">
+                  <img class="org-icon" src="Icon/icons8-linkedin.svg" />
+                </a>
+                <div class="cat-app">
+                  <h4>Circooles</h4>
+                  <a>getcirooles.com</a>
+                </div>
+              </td>
+              <td>
+                <label class="value-number disable">Churned</label>
+              </td>
+              <td>
+                <div class="text-value">
+                  <p>Design software</p>
+                  <p class="value-up">Super lightweight design app</p>
+                </div>
+              </td>
+              <td>
+                <label class="value-users">
+                  <a href="#" class="users-emoj">
+                    <image class="icon" src="/src/assets/Emoj/angry.svg" />
+                  </a>
+                  <a href="#" class="users-emoj">
+                    <image class="icon" src="/src/assets/Emoj/annoyed.svg" />
+                  </a>
+                  <a href="#" class="users-emoj">
+                    <image class="icon" src="/src/assets/Emoj/frown.svg" />
+                  </a>
+                  <a href="#" class="users-emoj">
+                    <image class="icon" src="/src/assets/Emoj/laugh.svg" />
+                  </a>
+                  <a href="#" class="users-emoj">
+                    <image class="icon" src="/src/assets/Emoj/meh.svg" />
+                  </a>
+                </label>
+              </td>
+              <td>
+                <div class="talign">
+                  <label class="main-lain">
+                    <div class="custom-lain" style="width: 100px;"></div>
+                  </label>
+                  <p>60%</p>
+                </div>
+              </td>
+              <td>
+                <a href="#">
+                  <image class="icon__2" src="/src/assets/ellipsis-vertical.svg" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="radio" /> </td>
+              <td>
+                <a class="org-icon">
+                  <img class="org-icon" src="Icon/icons8-ручной-спиннер.gif" />
+                </a>
+                <div class="cat-app">
+                  <h4>Command+R</h4>
+                  <a>cmdr.ai</a>
+                </div>
+              </td>
+              <td>
+                <label class="value-number">Customer</label>
+              </td>
+              <td>
+                <div class="text-value">
+                  <p>Data preiction</p>
+                  <p class="value-up">AI and machine learning data</p>
+                </div>
+              </td>
+              <td>
+                <label class="value-users">
+                  <a href="#" class="users-emoj">
+                    <image class="icon" src="/src/assets/Emoj/angry.svg" />
+                  </a>
+                  <a href="#" class="users_emoj">
+                    <image class="icon" src="/src/assets/Emoj/annoyed.svg" />
+                  </a>
+                  <a href="#" class="users_emoj">
+                    <image class="icon" src="/src/assets/Emoj/frown.svg" />
+                  </a>
+                  <a href="#" class="users_emoj">
+                    <image class="icon" src="/src/assets/Emoj/laugh.svg" />
+                  </a>
+                  <a href="#" class="users_emoj">
+                    <image class="icon" src="/src/assets/Emoj/meh.svg" />
+                  </a>
+                </label>
+              </td>
+              <td>
+                <div class="talign">
+                  <label class="main-lain">
+                    <div class="custom-lain p30"></div>
+                  </label>
+                  <p>30%</p>
+                </div>
+              </td>
+              <td>
+                <a href="#">
+                  <image class="icon__2" src="/src/assets/ellipsis-vertical.svg" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="radio" /> </td>
+              <td>
+                <a class="org-icon">
+                  <img class="org-icon" src="Icon/icons8-растения-против-зомби-зеленая-тень.gif" />
+                </a>
+                <div class="cat-app">
+                  <h4>Hourglass</h4>
+                  <a>hourglass.app</a>
+                </div>
+              </td>
+              <td>
+                <label class="value-number">Customer</label>
+              </td>
+              <td>
+                <div class="text-value">
+                  <p>Productivity app</p>
+                  <p class="value-up">Time management and productivity</p>
+                </div>
+              </td>
+              <td>
+                <label class="value-users">
+                  <a href="#" class="users-emoj">
+                    <image class="icon" src="/src/assets/Emoj/angry.svg" />
+                  </a>
+                  <a href="#" class="users_emoj">
+                    <image class="icon" src="/src/assets/Emoj/annoyed.svg" />
+                  </a>
+                  <a href="#" class="users_emoj">
+                    <image class="icon" src="/src/assets/Emoj/frown.svg" />
+                  </a>
+                  <a href="#" class="users_emoj">
+                    <image class="icon" src="/src/assets/Emoj/laugh.svg" />
+                  </a>
+                  <a href="#" class="users_emoj">
+                    <image class="icon" src="/src/assets/Emoj/meh.svg" />
+                  </a>
+                </label>
+              </td>
+              <td>
+                <div class="talign">
+                  <label class="main-lain">
+                    <div class="custom-lain p80"></div>
+                  </label>
+                  <p>80%</p>
+                </div>
+              </td>
+              <td>
+                <a href="#">
+                  <image class="icon__2" src="/src/assets/ellipsis-vertical.svg" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="radio" /> </td>
+              <td>
+                <a class="org-icon">
+                  <img class="org-icon" src="Icon/icons8-minecraft-овца.gif" />
+                </a>
+                <div class="cat-app">
+                  <h4>Layers</h4>
+                  <a>getlayers.io</a>
+                </div>
+              </td>
+              <td>
+                <label class="value-number disable">Churned</label>
+              </td>
+              <td>
+                <div class="text-value">
+                  <p>Web app integrations</p>
+                  <p class="value-up">Connect web apps seamlessly</p>
+                </div>
+              </td>
+              <td>
+                <label class="value-users">
+                  <a href="#" class="users-emoj">
+                    <image class="icon" src="/src/assets/Emoj/angry.svg" />
+                  </a>
+                  <a href="#" class="users_emoj">
+                    <image class="icon" src="/src/assets/Emoj/annoyed.svg" />
+                  </a>
+                  <a href="#" class="users_emoj">
+                    <image class="icon" src="/src/assets/Emoj/frown.svg" />
+                  </a>
+                  <a href="#" class="users_emoj">
+                    <image class="icon" src="/src/assets/Emoj/laugh.svg" />
+                  </a>
+                  <a href="#" class="users_emoj">
+                    <image class="icon" src="/src/assets/Emoj/meh.svg" />
+                  </a>
+                </label>
+              </td>
+              <td>
+                <div class="talign">
+                  <label class="main-lain">
+                    <div class="custom-lain p20"></div>
+                  </label>
+                  <p>20%</p>
+                </div>
+              </td>
+              <td>
+                <a href="#">
+                  <image class="icon__2" src="/src/assets/ellipsis-vertical.svg" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="radio" /> </td>
+              <td>
+                <a class="org-icon">
+                  <img class="org-icon" src="Icon/icons8-play-station.gif" />
+                </a>
+                <div class="cat-app">
+                  <h4>Quotient</h4>
+                  <a>quotient.co</a>
+                </div>
+              </td>
+              <td>
+                <label class="value-number">Customer</label>
+              </td>
+              <td>
+                <div class="text-value">
+                  <p>Sales CRM</p>
+                  <p class="value-up">Web-based sales doc management</p>
+                </div>
+              </td>
+              <td>
+                <label class="value-users">
+                  <a href="#" class="users-emoj">
+                    <image class="icon" src="/src/assets/Emoj/angry.svg" />
+                  </a>
+                  <a href="#" class="users_emoj">
+                    <image class="icon" src="/src/assets/Emoj/annoyed.svg" />
+                  </a>
+                  <a href="#" class="users_emoj">
+                    <image class="icon" src="/src/assets/Emoj/frown.svg" />
+                  </a>
+                  <a href="#" class="users_emoj">
+                    <image class="icon" src="/src/assets/Emoj/laugh.svg" />
+                  </a>
+                  <a href="#" class="users_emoj">
+                    <image class="icon" src="/src/assets/Emoj/meh.svg" />
+                  </a>
+                </label>
+              </td>
+              <td>
+                <div class="talign">
+                  <label class="main-lain">
+                    <div class="custom-lain p10"></div>
+                  </label>
+                  <p>10%</p>
+                </div>
+              </td>
+              <td>
+                <a href="#">
+                  <image class="icon__2" src="/src/assets/ellipsis-vertical.svg" />
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
