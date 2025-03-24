@@ -1,7 +1,6 @@
-import ReactDOM from 'react-dom/client'
-import React from 'react'
+// import ReactDOM from 'react-dom/client'
+// import React from 'react'
 
-import App from './App.tsx'
 import './styles/index.scss'
  // <- а отсюда уже всасываем _module.scss
 
